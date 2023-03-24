@@ -1,0 +1,20 @@
+{
+  "name": "mono-repo-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gracebir/mono-repo-example",
+  "author": "gracebir <grace.devolop@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^1.8.5"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node apps/api/dist/main"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "private": "true"
+}
